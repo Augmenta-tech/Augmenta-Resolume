@@ -89,7 +89,8 @@ void main()
 	  float uvX = (i+.5)/augmentaNumPoints;
     vec4 point = texture2D(augmentaData, vec2(uvX,0));
     // Draw
-	  if(point.x > 0 && point.y > 0) colorOut += drawCircle(point.xy, point.z, point.w, size, edgeBlur);
+	 if(point.z > .4 || point.x == 0 || point.y == 0) continue;
+	 colorOut += drawCircle(point.xy, point.z, point.w, size, edgeBlur);
   }
  
   gl_FragColor = colorOut;

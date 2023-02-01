@@ -1,4 +1,4 @@
-)/*{
+/*{
   "CREDIT": "by mojovideotech",
   "CATEGORIES": [
     "generator",
@@ -233,7 +233,9 @@ bool IntersectSphere(vec3 ro, vec3 rd, vec3 pos, float radius, out vec3 intersec
 
 vec4 drawBall(vec2 pos, float timeOffset, float densityOffset, vec2 rateOffset, float weight)
 {
-    vec2 p = (gl_FragCoord.xy / RENDERSIZE.xy) * 2.0 - 1.0;
+	if(weight == 0) return vec4(0,0,0,0);
+	
+   vec2 p = (gl_FragCoord.xy / RENDERSIZE.xy) * 2.0 - 1.0;
   p += pos;
   p.x *= RENDERSIZE.x/RENDERSIZE.y;
 
@@ -247,7 +249,8 @@ vec4 drawBall(vec2 pos, float timeOffset, float densityOffset, vec2 rateOffset, 
   vec3 rd = normalize(p.x*uu + p.y*vv + 1.5*ww);
   vec4 col = vec4(0.0);
   vec3 origin;
-  if(IntersectSphere(ro, rd, vec3(0.0), Radius + depth*7.0, origin))
+   float tSize = (Radius + depth*7.0)*weight;
+  if(IntersectSphere(ro, rd, vec3(0.0), tSize, origin))
   {
     return col = March(origin, rd, timeOffset,densityOffset, rateOffset);
   }
@@ -260,16 +263,20 @@ void main()
   // Init
   vec4 colorOut = vec4(0.0,0.0,0.0,0.0);
 	
-  for(int i=0;i<100;++i)
+  for(int i=0;i<100;++i) 
   {
     if(i > augmentaNumPoints) break;
 	
     // Get the point
-	  float uvX = (i+.5)/augmentaNumPoints;
+	float uvX = (i+.5)/augmentaNumPoints;
     vec4 point = texture2D(augmentaData, vec2(uvX,0));
     // Draw
-	  if(point.x > 0 && point.y > 0) colorOut += drawBall(point.xy,  1.0, 2.0, vec2(-2,-5), point.w);
+	  vec2 tPos = -(point.xy-.5)*2;
+	  if(point.z > .4 || point.x == 0 || point.y == 0) continue;
+	  colorOut += drawBall(tPos,i,0,vec2(0,0), point.w);
   }
  
   gl_FragColor = colorOut;
 }
+
+ 
