@@ -64,22 +64,23 @@ void main()
      
 	vec2 targetPos = vec2(0,0);
 	
-	int goodPoints = 0;
+	float totalWeight = 0;
     for(int i=0;i<100;++i) 
     {
 	  if(i > augmentaNumPoints) break;
 	
 	  float uvX = (i+.5)/augmentaNumPoints;
       vec4 point = texture2D(augmentaData, vec2(uvX,0));
-	
+	 
+		point.y = 1-point.y;
 	  if(point.z > .4 || point.x == 0 || point.y == 0) continue;
 	
       vec2 sp = getSwirledPos(point.xy, radius * point.w);
-      targetPos += sp;
-	 goodPoints++;
+      targetPos += sp * vec2(point.z);
+	  totalWeight += point.z;
     }     
 	
-     if(goodPoints >0) targetPos = targetPos / vec2(goodPoints, goodPoints);
+     if(totalWeight >0) targetPos = targetPos / vec2(totalWeight);
 	 else targetPos = isf_FragNormCoord;
 	
      vec4 swirlCol = IMG_NORM_PIXEL(inputImage, targetPos);
