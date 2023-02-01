@@ -19,6 +19,8 @@ Note : If you want to export a compiled plugin for [Resolume](https://resolume.c
 
 ## Augmenta dots
 
+<img width="303" alt="Augmenta_Resolume-dots" src="https://user-images.githubusercontent.com/5172593/216119688-2a3fd130-c8ef-40c5-81a5-43864bb4eb76.png">
+
 A plugin to quickly see Augmenta dots
 
 With effects and layering this plugin can be used for a lot of content creation
@@ -30,6 +32,10 @@ This plugin is also a simple ISF shader example with Augmenta
 A plugin to display Augmenta zones
 
 ## Augmenta Balls of Fire
+
+<img width="687" alt="Augmenta_balls-of-fire" src="https://user-images.githubusercontent.com/5172593/216119504-5f7eb006-48e7-4728-bd7c-9d2227b17335.png">
+
+Augmenta adaptation of this ISF Shader : https://editor.isf.video/shaders/5e7a802f7c113618206dec69
 
 
 
