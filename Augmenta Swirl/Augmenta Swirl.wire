@@ -138,16 +138,6 @@
 			},
 			{
 				"from": [
-					200,
-					"output"
-				],
-				"to": [
-					197,
-					"input0"
-				]
-			},
-			{
-				"from": [
 					236,
 					"output"
 				],
@@ -195,6 +185,16 @@
 					226,
 					"inputImage"
 				]
+			},
+			{
+				"from": [
+					200,
+					"output"
+				],
+				"to": [
+					197,
+					"input0"
+				]
 			}
 		],
 		"inputOrder": [
@@ -212,7 +212,7 @@
 				"name": "Wire",
 				"version": "7.13.2.17774"
 			},
-			"identifier": "b9b17014-b5a8-479c-8648-2e3da1747a14",
+			"identifier": "b9b17014-b5a9-479c-8648-2e3da1747a14",
 			"licenseName": "",
 			"mail": "contact@augmenta.tech",
 			"quality": 32856,
@@ -224,7 +224,7 @@
 			"url": "www.augmenta.tech",
 			"vendor": "Augmenta"
 		},
-		"nextNodeId": 240,
+		"nextNodeId": 246,
 		"nodes": {
 			"109": {
 				"attributes": {
@@ -648,124 +648,124 @@
 						"type": "float4",
 						"value": [
 							[
-								0.37645316123962402,
-								0.40021049976348877,
-								0.25,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.78936630487442017,
-								0.71467077732086182,
-								0.25,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.08503503352403641,
-								0.9482387900352478,
-								0.25,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.14159636199474335,
-								0.9021073579788208,
-								0.5,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.24903133511543274,
-								0.76836276054382324,
-								0.5,
-								0.10902928560972214
-							],
-							[
-								0.54039847850799561,
-								0.99106782674789429,
-								0.5,
-								0
+								0,
+								0,
+								0,
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
 							]
 						]
 					}
@@ -1601,6 +1601,46 @@
 				],
 				"name": "Texture In"
 			},
+			"241": {
+				"attributes": {
+					"input0-dimensions": {
+						"type": "dimensions",
+						"value": []
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"resolution": {
+						"type": "choice",
+						"value": "Input Size"
+					},
+					"sampling": {
+						"type": "choice",
+						"value": "Linear"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": -24.91279983520507812,
+					"y": -177.067047119140625
+				},
+				"class": {
+					"id": "77697265-A4AE-41FA-8316-8C0D54BC55B7",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffe53357",
+				"constants": {
+					"input0": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [],
+				"name": "Reset"
+			},
 			"81": {
 				"attributes": {
 					"instances": {
@@ -1635,8 +1675,8 @@
 		"ui": {
 			"camera": {
 				"x": -1519.030517578125,
-				"y": -2109.86474609375,
-				"zoom": 0.2858070433139801
+				"y": -1470.3424072265625,
+				"zoom": 0.48020932078361511
 			},
 			"selection": []
 		}
@@ -1654,21 +1694,6 @@
 				"local": true,
 				"name": "Augmenta_Swirl",
 				"path": "Augmenta_Swirl.isf"
-			},
-			"afa6e8ef43135e8d11d6120e6b125737": {
-				"local": true,
-				"name": "Augmenta_Balls-of-Fire",
-				"path": "Augmenta_Balls-of-Fire.isf"
-			},
-			"e09e1121cad4a82bc17b0289acc0e9da": {
-				"local": true,
-				"name": "Augmenta_dots",
-				"path": "Augmenta_dots.isf"
-			},
-			"f859535f6a5809aaf66f2d74a1bdc3fb": {
-				"local": true,
-				"name": "ISF_Example",
-				"path": "ISF_Example.isf"
 			}
 		}
 	},

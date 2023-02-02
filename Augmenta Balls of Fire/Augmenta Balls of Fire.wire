@@ -138,16 +138,6 @@
 			},
 			{
 				"from": [
-					200,
-					"output"
-				],
-				"to": [
-					197,
-					"input0"
-				]
-			},
-			{
-				"from": [
 					197,
 					"output0"
 				],
@@ -185,6 +175,16 @@
 					226,
 					"size"
 				]
+			},
+			{
+				"from": [
+					200,
+					"output"
+				],
+				"to": [
+					197,
+					"input0"
+				]
 			}
 		],
 		"inputOrder": [
@@ -201,7 +201,7 @@
 				"name": "Wire",
 				"version": "7.13.2.17774"
 			},
-			"identifier": "b9b17014-b5a8-479c-8648-2e3da1747a14",
+			"identifier": "b9b17014-b5a8-479c-8648-2e3da1547a14",
 			"licenseName": "",
 			"mail": "contact@augmenta.tech",
 			"quality": 32856,
@@ -213,7 +213,7 @@
 			"url": "www.augmenta.tech",
 			"vendor": "Augmenta"
 		},
-		"nextNodeId": 238,
+		"nextNodeId": 239,
 		"nodes": {
 			"109": {
 				"attributes": {
@@ -637,124 +637,124 @@
 						"type": "float4",
 						"value": [
 							[
-								0.14572970569133759,
-								0.97034841775894165,
-								0.5,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.22735738754272461,
-								0.86509919166564941,
-								0.5,
-								0
-							],
-							[
-								0.27480757236480713,
-								0.58354794979095459,
-								0.25,
+								0,
+								0,
+								0,
 								1
 							],
 							[
-								0.27449622750282288,
-								0.33649265766143799,
-								0.5,
-								0.10902927815914154
-							],
-							[
-								0.3068099319934845,
-								0.69548070430755615,
-								0.5,
-								0
-							],
-							[
-								0.54039847850799561,
-								0.99106782674789429,
-								0.5,
-								0
+								0,
+								0,
+								0,
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
 							],
 							[
 								0,
 								0,
 								0,
-								0
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
 							]
 						]
 					}
@@ -1583,6 +1583,50 @@
 				],
 				"name": "Float In"
 			},
+			"238": {
+				"attributes": {
+					"bitdepth": {
+						"type": "choice",
+						"value": "Patch Bit Depth"
+					},
+					"input0-dimensions": {
+						"type": "dimensions",
+						"value": []
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"resolution": {
+						"type": "choice",
+						"value": "Patch Size"
+					},
+					"sampling": {
+						"type": "choice",
+						"value": "Linear"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": -25.93161773681640625,
+					"y": -177.1563262939453125
+				},
+				"class": {
+					"id": "77697265-A4AE-41FA-8316-8C0D54BC55B7",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffe53357",
+				"constants": {
+					"input0": {
+						"type": "procedural",
+						"value": null
+					}
+				},
+				"hidden": [],
+				"name": "reset"
+			},
 			"81": {
 				"attributes": {
 					"instances": {
@@ -1616,9 +1660,9 @@
 		},
 		"ui": {
 			"camera": {
-				"x": -505.817169189453125,
-				"y": -1266.1162109375,
-				"zoom": 0.4976344108581543
+				"x": -1519.030517578125,
+				"y": -1470.3424072265625,
+				"zoom": 0.48020932078361511
 			},
 			"selection": []
 		}
@@ -1629,16 +1673,6 @@
 				"local": true,
 				"name": "Augmenta_Balls-of-Fire",
 				"path": "Augmenta_Balls-of-Fire.isf"
-			},
-			"e09e1121cad4a82bc17b0289acc0e9da": {
-				"local": true,
-				"name": "Augmenta_dots",
-				"path": "Augmenta_dots.isf"
-			},
-			"f859535f6a5809aaf66f2d74a1bdc3fb": {
-				"local": true,
-				"name": "ISF_Example",
-				"path": "ISF_Example.isf"
 			}
 		}
 	},

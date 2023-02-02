@@ -1878,16 +1878,6 @@
 				"local": true,
 				"name": "Augmenta_duplicator",
 				"path": "Augmenta_duplicator.isf"
-			},
-			"e09e1121cad4a82bc17b0289acc0e9da": {
-				"local": true,
-				"name": "Augmenta_dots",
-				"path": "Augmenta_dots.isf"
-			},
-			"f859535f6a5809aaf66f2d74a1bdc3fb": {
-				"local": true,
-				"name": "ISF_Example",
-				"path": "ISF_Example.isf"
 			}
 		}
 	},
