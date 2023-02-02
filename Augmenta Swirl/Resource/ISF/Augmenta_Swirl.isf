@@ -77,7 +77,7 @@ void main()
 	
       vec2 sp = getSwirledPos(point.xy, radius * point.w);
       targetPos += sp * vec2(point.z);
-	  totalWeight += point.z;
+	  totalWeight += point.w;
     }     
 	
      if(totalWeight >0) targetPos = targetPos / vec2(totalWeight);
