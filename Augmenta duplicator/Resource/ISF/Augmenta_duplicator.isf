@@ -1,0 +1,59 @@
+// Augmenta dots example shader
+// by Augmenta (https://www.augmenta.tech)
+// Ben Kuperberg, Thomas Weissgerber and David-Alexandre Chanel
+
+/*{
+  "CREDIT": "Joseph Fiola",
+  "DESCRIPTION": "",
+  "CATEGORIES": [
+    "Generator"
+  ],
+  "INPUTS": [
+    {
+      "NAME": "inputImage",
+      "TYPE": "image"
+    },
+    {
+      "NAME": "size",
+      "TYPE": "float",
+      "DEFAULT": 0.35,
+      "MIN": 0,
+      "MAX": 1
+    },
+    {
+      "NAME": "drawGhosts",
+      "TYPE" : "bool",
+      "DEFAULT" : false
+    },
+	{
+      "NAME": "augmentaNumPoints",
+      "TYPE": "float",
+      "DEFAULT": 20,
+      "MIN": 0,
+      "MAX": 100
+    },
+    {
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    }
+  ]
+}*/
+
+void main()
+{
+  // Init
+  vec4 colorOut = vec4(0.0,0.0,0.0,0.0);
+	
+  for(float i=0;i<100;++i)
+  {
+    if(i > augmentaNumPoints) break;
+	
+    // Get the point
+	float uvX = (i+.5)/augmentaNumPoints;
+    vec4 point = texture2D(augmentaData, vec2(uvX,0));
+    // Draw
+	//if(point.x > 0 && point.y > 0) colorOut += drawCircle(point.xy, point.z, point.w, size, edgeBlur);
+  }
+ 
+  gl_FragColor = colorOut;
+}
