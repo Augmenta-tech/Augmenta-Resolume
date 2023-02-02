@@ -205,6 +205,16 @@
 					225,
 					"drawGhosts"
 				]
+			},
+			{
+				"from": [
+					226,
+					"output"
+				],
+				"to": [
+					225,
+					"bgColor"
+				]
 			}
 		],
 		"inputOrder": [
@@ -212,7 +222,8 @@
 			207,
 			209,
 			210,
-			211
+			211,
+			226
 		],
 		"meta": {
 			"author": "Augmenta",
@@ -236,7 +247,7 @@
 			"url": "www.augmenta.tech",
 			"vendor": "Augmenta"
 		},
-		"nextNodeId": 226,
+		"nextNodeId": 227,
 		"nodes": {
 			"109": {
 				"attributes": {
@@ -646,8 +657,8 @@
 				"bounds": {
 					"height": 30,
 					"width": 195,
-					"x": -25.54901313781738281,
-					"y": -243.1613922119140625
+					"x": -29.55181121826171875,
+					"y": -160.436920166015625
 				},
 				"class": {
 					"id": "77697265-A4AE-41FA-8316-8C0D54BC55B7",
@@ -1262,8 +1273,8 @@
 				"bounds": {
 					"height": 82,
 					"width": 130,
-					"x": 37.7107086181640625,
-					"y": -373.6888427734375
+					"x": 33.70791244506835938,
+					"y": -290.96435546875
 				},
 				"class": {
 					"id": "77697265-999C-4F8B-8B9D-3646DC68AA69",
@@ -1612,7 +1623,7 @@
 					}
 				},
 				"bounds": {
-					"height": 202,
+					"height": 225,
 					"width": 195,
 					"x": 315.837493896484375,
 					"y": -588.7744140625
@@ -1631,6 +1642,15 @@
 					"augmentaNumPoints": {
 						"type": "float",
 						"value": 20
+					},
+					"bgColor": {
+						"type": "float4",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
 					},
 					"bypass": {
 						"type": "bool",
@@ -1667,6 +1687,45 @@
 				],
 				"name": "ISF"
 			},
+			"226": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "number",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 37.33942413330078125,
+					"y": -399.66192626953125
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float4",
+						"value": [
+							0,
+							0,
+							0,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"input"
+				],
+				"name": "BG Color"
+			},
 			"81": {
 				"attributes": {
 					"instances": {
@@ -1700,12 +1759,12 @@
 		},
 		"ui": {
 			"camera": {
-				"x": -1519.030517578125,
-				"y": -2109.86474609375,
-				"zoom": 0.2858070433139801
+				"x": -137.82843017578125,
+				"y": -879.02557373046875,
+				"zoom": 0.74947583675384521
 			},
 			"selection": [
-				"169"
+				"226"
 			]
 		}
 	},

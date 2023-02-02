@@ -34,6 +34,16 @@
       ]
     },
     {
+    "NAME" : "bgColor",
+      "TYPE" : "color",
+      "DEFAULT" : [
+        0,
+        0,
+        0,
+        1.0
+      ]
+    },
+    {
       "NAME": "drawGhosts",
       "TYPE" : "bool",
       "DEFAULT" : false
@@ -79,7 +89,7 @@ vec4 drawCircle(vec2 pos, float st, float weight, float radius, float edgeBlur)
 void main()
 {
   // Init
-  vec4 colorOut = vec4(0.0,0.0,0.0,0.0);
+  vec4 colorOut = bgColor;
 	
   for(float i=0;i<100;++i)
   {
