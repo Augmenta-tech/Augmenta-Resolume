@@ -2,10 +2,13 @@
 
 A collection of [Resolume](https://resolume.com/) real time and interactive plugins made with Wire and ISF shaders that takes [Augmenta](https://www.augmenta.tech) data as input
 
-## Use
+> Note : All those plugins are currently prototype we are working on, and use a new protocol, please contact us if you have a real project
 
-- Download the plugins : 
-- Drag'n drop them in [Resolume](https://resolume.com/) 
+## Use
+  
+- Download the plugins [here](https://github.com/Augmenta-tech/Augmenta-Resolume/releases/latest)
+- Double click on them
+- [Resolume](https://resolume.com/) should ask you if you want to install them
 
 ## Create
 
