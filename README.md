@@ -2,8 +2,6 @@
 
 A collection of [Resolume](https://resolume.com/) Augmenta plugins made with Wire and ISF shaders that takes [Augmenta](https://www.augmenta.tech) data as input
 
-> Note : All those plugins are currently prototype we are working on, and use a new protocol, please contact us if you have a real project
-
 ## Getting started
 
 Video tutorial and documentation here : // INSERT RESOLUME DOC LINK
