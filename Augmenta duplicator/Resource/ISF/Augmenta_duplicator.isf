@@ -9,6 +9,17 @@
     "Generator"
   ],
   "INPUTS": [
+	{
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    },
+	{
+      "NAME": "augmentaMaxNumObjects",
+      "TYPE": "float",
+      "DEFAULT": 20,
+      "MIN": 1,
+      "MAX": 20
+    },
     {
       "NAME": "inputImage",
       "TYPE": "image"
@@ -19,41 +30,50 @@
       "DEFAULT": 0.35,
       "MIN": 0,
       "MAX": 1
-    },
-    {
-      "NAME": "drawGhosts",
-      "TYPE" : "bool",
-      "DEFAULT" : false
-    },
-	{
-      "NAME": "augmentaNumPoints",
-      "TYPE": "float",
-      "DEFAULT": 20,
-      "MIN": 0,
-      "MAX": 100
-    },
-    {
-      "NAME": "augmentaData",
-      "TYPE": "image"
     }
   ]
 }*/
+
+
+vec4 drawImage(vec2 pos, float st, float weight, float radius)
+{
+    vec4 result = vec4(0,0,0,0);
+    vec2 uv = gl_FragCoord.xy / RENDERSIZE.xy;
+
+    float dist = length(uv - pos);
+    vec2 distCoord = vec2(uv.x - pos.x, -(uv.y - pos.y));
+	vec2 imageCoordCenter = vec2(0.5);
+	
+	vec2 look2; 
+	look2 = distCoord;
+	
+	distCoord = distCoord*0.5/size + imageCoordCenter;	
+
+    vec4 tColor = IMG_NORM_PIXEL(inputImage, distCoord);
+
+    float factor = step(-radius, look2.x)*(1-step(radius, look2.x))* step(-radius, look2.y)*(1-step(radius, look2.y));
+    result = factor * tColor *  weight;
+
+   return result;
+}
+
 
 void main()
 {
   // Init
   vec4 colorOut = vec4(0.0,0.0,0.0,0.0);
-	
-  for(float i=0;i<100;++i)
+
+
+  for(float i=0;i<augmentaMaxNumObjects;++i)
   {
-    if(i > augmentaNumPoints) break;
-	
     // Get the point
-	float uvX = (i+.5)/augmentaNumPoints;
+	float uvX = (i+.5)/augmentaMaxNumObjects;
     vec4 point = texture2D(augmentaData, vec2(uvX,0));
+		
     // Draw
-	//if(point.x > 0 && point.y > 0) colorOut += drawCircle(point.xy, point.z, point.w, size, edgeBlur);
+	if(point.x == 0 || point.y == 0 || point.w == 0) continue;
+	colorOut += drawImage(point.xy, point.z, point.w, size);
   }
  
-  gl_FragColor = colorOut;
+    gl_FragColor = colorOut;
 }

@@ -5,6 +5,17 @@
     "Distortion Effect"
   ],
   "INPUTS": [
+	{
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    },
+	{
+      "NAME": "augmentaMaxNumObjects",
+      "TYPE": "float",
+      "DEFAULT": 20,
+      "MIN": 1,
+      "MAX": 20
+    },
     {
       "NAME": "inputImage",
       "TYPE": "image"
@@ -22,17 +33,6 @@
       "DEFAULT": 1,
       "MIN": -1,
       "MAX": 1
-    },
-    {
-      "NAME": "augmentaNumPoints",
-      "TYPE": "float",
-      "DEFAULT": 20,
-      "MIN": 0,
-      "MAX": 100
-    },
-    {
-      "NAME": "augmentaData",
-      "TYPE": "image"
     }
   ]
 }*/
@@ -65,15 +65,14 @@ void main()
 	vec2 targetPos = vec2(0,0);
 	
 	float totalWeight = 0;
-    for(int i=0;i<100;++i) 
+    for(int i=0;i<augmentaMaxNumObjects;++i) 
     {
-	  if(i > augmentaNumPoints) break;
 	
-	  float uvX = (i+.5)/augmentaNumPoints;
+	  float uvX = (i+.5)/augmentaMaxNumObjects;
       vec4 point = texture2D(augmentaData, vec2(uvX,0));
 	 
 		point.y = 1-point.y;
-	  if(point.z > .4 || point.x == 0 || point.y == 0) continue;
+	  if(point.x == 0 || point.y == 0 || point.w == 0) continue;
 	
       vec2 sp = getSwirledPos(point.xy, radius * point.w);
       targetPos += sp * vec2(point.w);

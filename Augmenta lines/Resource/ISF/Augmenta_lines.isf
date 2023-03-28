@@ -1,0 +1,170 @@
+/*{
+  "CREDIT": "Joseph Fiola",
+  "DESCRIPTION": "",
+  "CATEGORIES": [
+    "Generator"
+  ],
+  "INPUTS": [	
+    {
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    },
+	{
+      "NAME": "augmentaMaxNumObjects",
+      "TYPE": "float",
+      "DEFAULT": 20,	
+      "MIN": 1,
+      "MAX": 20
+    },
+   {
+      "NAME": "size",
+      "TYPE": "float",
+      "DEFAULT": 0.35,
+      "MIN": 0,
+      "MAX": 1
+    },
+    {
+      "NAME": "edgeBlur",
+      "TYPE": "float",
+      "DEFAULT": 0.5,
+      "MIN": 0,
+      "MAX": 1
+    },
+	{
+      "NAME": "lineWidth",
+      "TYPE": "float",
+      "DEFAULT": 0.003,
+      "MIN": 0,
+      "MAX": 0.05
+    },
+	{
+      "NAME": "lineFadeDistance",
+      "TYPE": "float",
+      "DEFAULT": 0.3,
+      "MIN": 0,
+      "MAX": 0.5
+    },
+    {
+    "NAME" : "color",
+      "TYPE" : "color",
+      "DEFAULT" : [
+        1,
+        1,
+        1,
+        1.0
+      ]
+    },
+    {
+    "NAME" : "bgColor",
+      "TYPE" : "color",
+      "DEFAULT" : [
+        0,
+        0,
+        0,
+        1.0
+      ]
+    }
+  ]
+}*/
+
+vec4 drawCircle(vec2 pos, float st, float weight, float radius, float edgeBlur)
+{
+    vec4 result = vec4(0,0,0,0);
+    vec2 uv = gl_FragCoord.xy / RENDERSIZE.xy;
+
+    float ratio = RENDERSIZE.x / RENDERSIZE.y;
+    uv -= pos.x;
+    uv.x *= ratio;
+    uv += pos.x;
+
+    float dist = length(uv - pos);
+    
+    float look;
+    look = abs(dist - radius);
+
+    vec4 tColor = color;
+
+    float factor = (1.0 - smoothstep(radius, (radius+edgeBlur),  look));
+    result = factor * tColor *  weight;
+
+   return result;
+}
+
+float DistToLine(vec2 pt1, vec2 pt2, vec2 testPt)
+{
+  	vec2 lineDir = pt2 - pt1;
+  	vec2 perpDir = vec2(lineDir.y, -lineDir.x);
+  	vec2 dirToPt1 = pt1 - testPt;
+    
+    float a = abs(distance(pt1, testPt));
+    float b = abs(distance(pt2, testPt));
+    float c = abs(distance(pt1, pt2));
+    
+    float agtc = sign(a - c);
+    float bgtc = sign(b - c);
+    
+    float comp = clamp(max(agtc, bgtc), 0.0, 1.0);
+     
+  	return mix(abs(dot(normalize(perpDir), dirToPt1)), 1000.0, comp);
+}
+
+float inLine(const vec2 testPoint, const vec2 iPoint, const vec2 jPoint)
+{
+  return lineWidth - DistToLine(iPoint, jPoint, testPoint);
+}
+
+vec4 drawLines(vec2 pos1, vec2 pos2)
+{
+	vec2 uv = gl_FragCoord.xy / RENDERSIZE.xy;
+	
+    vec4 lineColor = color;
+    vec4 baseColor = vec4(0.0);
+ 	vec4 ret = vec4(0.0);
+
+    vec2 iPoint;
+    vec2 jPoint;
+
+    float lineDist = inLine(uv, pos1, pos2);
+    float lineMix = lineDist / lineWidth;
+
+    float fade = pow(lineFadeDistance / distance(pos1, pos2), 2.0);
+    vec4 possibleColor = lineColor * fade;
+    possibleColor = mix(baseColor, possibleColor, lineMix);
+    ret = max(ret, possibleColor);
+
+    return ret;
+}
+
+vec4 getFragColor(vec2 pos1, float weight, vec2 pos2, float weight2)
+{
+    vec4 ret = drawLines(pos1, pos2);    
+    return ret*weight*weight2;
+}
+
+void main()
+{
+  // Init
+  vec4 colorOut = bgColor;
+	
+  for(float i=0;i<augmentaMaxNumObjects;++i)
+  {
+	
+    // Get the point
+	float uvX = (i+.5)/augmentaMaxNumObjects;
+    vec4 point = texture2D(augmentaData, vec2(uvX,0));
+    
+    // Draw
+	if(point.x == 0 || point.y == 0 || point.w == 0) continue;
+	colorOut += drawCircle(point.xy, point.z, point.w, size, edgeBlur);
+		
+	for (float j=i+1;j<augmentaMaxNumObjects;++j){
+		float uvX2 = (j+.5)/augmentaMaxNumObjects;
+        vec4 point2 = texture2D(augmentaData, vec2(uvX2,0));
+		if(point2.x == 0 || point2.y == 0 || point2.w == 0) continue;
+		colorOut += getFragColor(point.xy, point.w, point2.xy, point2.w);
+		
+    }
+  }
+
+  gl_FragColor = colorOut;
+}

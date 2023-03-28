@@ -6,6 +6,17 @@
   ],
   "INPUTS": [
     {
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    },
+    {
+      "NAME": "augmentaMaxNumObjects",
+      "TYPE": "float",
+      "DEFAULT": 20,
+      "MIN": 1,
+      "MAX": 20
+    },
+    {
       "NAME": "offset",
       "TYPE": "point2D",
       "MAX": [
@@ -65,17 +76,6 @@
       "DEFAULT": 3.0,
       "MIN": -9.0,
       "MAX": 9.0
-    },
-    {
-      "NAME": "augmentaNumPoints",
-      "TYPE": "float",
-      "DEFAULT": 20,
-      "MIN": 0,
-      "MAX": 100
-    },
-    {
-      "NAME": "augmentaData",
-      "TYPE": "image"
     }
   ]
 }*/
@@ -263,16 +263,14 @@ void main()
   // Init
   vec4 colorOut = vec4(0.0,0.0,0.0,0.0);
 	
-  for(int i=0;i<100;++i) 
+  for(int i=0;i<augmentaMaxNumObjects;++i) 
   {
-    if(i > augmentaNumPoints) break;
-	
     // Get the point
-	float uvX = (i+.5)/augmentaNumPoints;
+	float uvX = (i+.5)/augmentaMaxNumObjects;
     vec4 point = texture2D(augmentaData, vec2(uvX,0));
     // Draw
 	  vec2 tPos = -(point.xy-.5)*2;
-	  if(point.z > .4 || point.x == 0 || point.y == 0) continue;
+	  if(point.w == 0 || point.x == 0 || point.y == 0) continue;
 	  colorOut += drawBall(tPos,i,0,vec2(0,0), point.w);
   }
  
