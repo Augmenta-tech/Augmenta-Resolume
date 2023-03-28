@@ -17,5 +17,3 @@ Prerequisite : Having a wire license
 - Use the example ISF shader as a starting point
 
 Tips : You can use Wire or this online editor for editing : https://editor.isf.video/
-
-Note : If you want to export a compiled plugin for [Resolume](https://resolume.com/) (meaning you don't want people to get your code), you need to have [Resolume wire](https://resolume.com/software/wire) installed
