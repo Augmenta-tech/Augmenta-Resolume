@@ -267,7 +267,7 @@
 				}
 			},
 			"description": "Draws Augmenta dots (ISF shader",
-			"displayName": "Augmenta Simple Viewer",
+			"displayName": "Augmenta dots",
 			"identifier": "32dc806a-a13a-4552-b0a8-75bc4f09fe10",
 			"licenseName": "",
 			"mail": "contact@augmenta.tech",
@@ -550,7 +550,7 @@
 					}
 				},
 				"bounds": {
-					"height": 28,
+					"height": 30,
 					"width": 195,
 					"x": 39.5359039306640625,
 					"y": -136.904998779296875
@@ -2364,8 +2364,8 @@
 		"ui": {
 			"camera": {
 				"x": -1799.26318359375,
-				"y": -2386.022705078125,
-				"zoom": 0.21299916505813599
+				"y": -3245.7646484375,
+				"zoom": 0.15253743529319763
 			},
 			"selection": [
 				"197"
