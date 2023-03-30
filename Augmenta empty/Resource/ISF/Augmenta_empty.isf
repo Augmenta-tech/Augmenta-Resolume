@@ -1,0 +1,64 @@
+// Augmenta dots example shader
+// by Augmenta (https://www.augmenta.tech)
+
+/*{
+  "CREDIT": "Joseph Fiola",
+  "DESCRIPTION": "",
+  "CATEGORIES": [
+    "Generator"
+  ],
+  "INPUTS": [	
+    {
+      "NAME": "augmentaData",
+      "TYPE": "image"
+    },
+    {
+      "NAME": "augmentaMaxNumObjects",
+      "TYPE": "float",
+      "DEFAULT": 20,	
+      "MIN": 1,
+      "MAX": 20
+    }
+  ]
+}*/
+
+vec4 draw(vec2 pos, float st, float weight)
+{
+    vec4 result = vec4(0,0,0,0);
+	
+	vec2 uv = gl_FragCoord.xy / RENDERSIZE.xy;
+	
+	
+    //here you can draw whatever you want
+
+    ///// For example, you can draw rectangle as follows 
+	vec4 tColor = vec4(0.5,0.5,0.5,1);
+	
+    vec2 distCoord = vec2(uv.x - pos.x, uv.y - pos.y);
+    float factor = step(-0.05, distCoord.x)*(1-step(0.05, distCoord.x))* step(-0.05, distCoord.y)*(1-step(0.05, distCoord.y));
+	
+	result = factor * tColor *  weight;
+	////
+	
+
+	
+	return result;
+}
+
+void main()
+{
+  // Init
+    vec4 colorOut = vec4(0,0,0,0);
+	
+    for(float i=0;i<augmentaMaxNumObjects;++i){
+		     
+    // Get the point
+	     float uvX = (i+.5)/augmentaMaxNumObjects;
+         vec4 point = texture2D(augmentaData, vec2(uvX,0));
+    // Draw
+	     if(point.x == 0 || point.y == 0 || point.w == 0) continue;
+	     colorOut += draw(point.xy, point.z, point.w);
+	}
+     
+     gl_FragColor = colorOut;
+}
