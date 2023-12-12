@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Composition name="Composition" uniqueId="1682347531303" numDecks="4" currentDeckIndex="0" numLayers="3" numColumns="12" compositionIsRelative="0">
-	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="14" microVersion="2" revision="22221"/>
+<Composition name="Composition" uniqueId="1688659084132" numDecks="4" currentDeckIndex="0" numLayers="3" numColumns="13" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="18" microVersion="2" revision="29742"/>
 	<CompositionInfo name="Augmenta-Example" description="" width="1280" height="720">
 		<DeckInfo name="Footage Shop" id="1499337861244" closed="0"/>
 		<DeckInfo name="Audio Visual" id="1499337861242" closed="0"/>
@@ -9,8 +9,8 @@
 	</CompositionInfo>
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="Augmenta-Example"/>
-		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999922550842">
-			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999988731236"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999909638948">
+			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999986788346"/>
 		</ParamRange>
 		<ParamChoice name="Beat Snap" default="1" value="5" storeChoices="0"/>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
@@ -136,7 +136,7 @@
 				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
 			</ParamRange>
 		</Params>
-		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347531416" baseType="RenderPassChain">
+		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077667469" baseType="RenderPassChain">
 			<RenderPass storage="0" name="ShiftRGB" type="DryWetEffect" uniqueTypeId="A153" uniqueId="1615203280713" baseType="DryWetEffect" index="0">
 				<View name="View" folded="1"/>
 				<RenderPass name="ShiftRGB" type="ShiftRGB" uniqueTypeId="A153" uniqueId="1615203280714" baseType="Effect" dwType="Effect">
@@ -305,7 +305,7 @@
 	</VideoTrack>
 	<Layer uniqueId="1499337861306" layerIndex="0">
 		<ClipTransition name="ClipTransition"/>
-		<LayerView name="LayerView">
+		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams"/>
 		</LayerView>
 		<AudioTrack name="AudioTrack">
@@ -323,7 +323,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347533844" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077670007" baseType="RenderPassChain">
 				<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1615203280753" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -350,7 +350,7 @@
 	</Layer>
 	<Layer uniqueId="1621342719811" layerIndex="1">
 		<ClipTransition name="ClipTransition"/>
-		<LayerView name="LayerView">
+		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams"/>
 		</LayerView>
 		<AudioTrack name="AudioTrack">
@@ -368,7 +368,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347533938" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077670137" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1621342719331" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -395,7 +395,7 @@
 	</Layer>
 	<Layer uniqueId="1621342719821" layerIndex="2">
 		<ClipTransition name="ClipTransition"/>
-		<LayerView name="LayerView">
+		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams"/>
 		</LayerView>
 		<AudioTrack name="AudioTrack">
@@ -413,7 +413,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534032" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077670267" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1621342719334" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -451,7 +451,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347531455" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077667509" baseType="RenderPassChain">
 				<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1615203280760" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -477,7 +477,7 @@
 			</ParamRange>
 		</Params>
 	</TempoController>
-	<Deck name="Deck" uniqueId="1499337861244" closed="0" numLayersWithContent="3" numColumnsWithContent="9" numLayers="3" numColumns="12" deckIndex="0">
+	<Deck name="Deck" uniqueId="1499337861244" closed="0" numLayersWithContent="3" numColumnsWithContent="10" numLayers="3" numColumns="13" deckIndex="0">
 		<Params name="Params">
 			<Param name="Name" T="STRING" default="empty" value="Footage Shop"/>
 		</Params>
@@ -493,12 +493,16 @@
 		<Column uniqueId="1679478894150" columnIndex="9"/>
 		<Column uniqueId="1679659106519" columnIndex="10"/>
 		<Column uniqueId="1679994686698" columnIndex="11"/>
+		<Column uniqueId="1688659089595" columnIndex="12"/>
 		<Clip name="Clip" uniqueId="1679994684427" layerIndex="0" columnIndex="0">
 			<PreloadData>
 				<EmbeddedThumbnail encoding="LZF" width="320" height="240" bitdepth="32" data="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"/>
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Metaballs" value="Metaballs"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -548,7 +552,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534615" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077670876" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994684431" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -585,8 +589,8 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.56189246481899612906">
-												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17669172932325877268"/>
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.56189246481892352048">
+												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17669172932324503367"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
@@ -613,7 +617,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534729" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671000" baseType="RenderPassChain"/>
 						<RenderPass name="Metaballs" type="Metaballs" uniqueTypeId="844752396506092017" uniqueId="1679994684443" baseType="Generator">
 							<Params name="Params">
 								<ParamRange name="Grid" T="DOUBLE" default="2" value="5">
@@ -669,6 +673,9 @@
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Spiral" value="Spiral"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -703,7 +710,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534846" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671133" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994684686" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -711,7 +718,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534920" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671208" baseType="RenderPassChain"/>
 						<RenderPass name="Spiral" type="Spiral" uniqueTypeId="884102460919" uniqueId="1679994684691" baseType="Generator">
 							<Params name="Params">
 								<ParamRange name="Detail" T="DOUBLE" default="2" value="4">
@@ -773,6 +780,9 @@
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Abstract Field" value="Abstract Field"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -807,7 +817,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535045" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671351" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994684900" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -815,15 +825,15 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535119" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671426" baseType="RenderPassChain"/>
 						<RenderPass name="AbstractField" type="WireGenerator" uniqueTypeId="c_35de2952-eebe-4238-ac4a-2e9864da6621" uniqueId="1679994684905" baseType="Generator">
 							<Params name="Params">
 								<ParamRange name="Octaves" T="DOUBLE" default="2" value="1">
 									<DurationSource name="DurationSource" userDuration="3.6475409836065568747" scale="0.54918032786885251362"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.54313258754012627705">
-												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17311608961299954079"/>
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.54313258754005611095">
+												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17311608961298607934"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0">
 												<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
@@ -843,8 +853,8 @@
 									<DurationSource name="DurationSource" userDuration="4.7950819672131155258" scale="0.57923497267759560536"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.42181563406789140958">
-												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.14867617107940439558"/>
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.42181563406783717518">
+												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.14867617107939287702"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4.7950819672131155258" value="1.9999999999999995559">
 												<PhaseSourceStatic name="PhaseSourceStatic" phase="0.41709401709401694447"/>
@@ -878,6 +888,9 @@
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Trinity_09" value="Trinity"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -912,7 +925,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347534271" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077670487" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994685137" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -920,17 +933,20 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1280" height="720" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535259" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671532" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="C:\Program Files\Resolume Arena\media\Shop74\Trinity_09.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
 		<Clip name="Clip" uniqueId="1621342720071" layerIndex="1" columnIndex="3"/>
-		<Clip name="Clip" uniqueId="1621342720101" layerIndex="2" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1688659089599" layerIndex="2" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1679994686831" layerIndex="0" columnIndex="4">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Abstract Field" value="Abstract Field"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -965,7 +981,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535305" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671578" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994686835" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -973,7 +989,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535379" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671653" baseType="RenderPassChain"/>
 						<RenderPass name="AbstractField" type="WireGenerator" uniqueTypeId="c_35de2952-eebe-4238-ac4a-2e9864da6621" uniqueId="1679994686840" baseType="Generator">
 							<Params name="Params">
 								<ParamRange name="Octaves" T="DOUBLE" default="2" value="3.2301425661914460186">
@@ -994,6 +1010,9 @@
 		<Clip name="Clip" uniqueId="1679994685250" layerIndex="1" columnIndex="4">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Augmenta lines 2" value="Augmenta lines 2"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1028,7 +1047,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535474" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671748" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994685254" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1036,7 +1055,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535548" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671823" baseType="RenderPassChain"/>
 						<RenderPass name="Augmentalink" type="WireGenerator" uniqueTypeId="c_8082670f-08bf-443f-8f62-3372039ecf93" uniqueId="1679994685259" baseType="Generator">
 							<Params name="Params">
 								<ParamRange name="Size" T="DOUBLE" default="0.015625" value="0.01934826883910386805">
@@ -1053,60 +1072,13 @@
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1679994687857" layerIndex="2" columnIndex="4">
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="Augmenta Balls Of Fire 2" value="Augmenta Balls Of Fire 2"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="3098.1289972596264306">
-						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.61962579945192530761" defaultBeatsDuration="8">
-							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
-								</ParamRange>
-							</Params>
-							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1" manualTempo="120" detected="0"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="5000"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams"/>
-			</ClipView>
-			<VideoTrack name="VideoTrack" manualDuration="0">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="1280" value="1280">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0390625"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="720" value="720">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="1" value="1"/>
-				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535657" baseType="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994687861" baseType="Effect" index="0">
-						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend"/>
-				<PrimarySource>
-					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535731" baseType="RenderPassChain"/>
-						<RenderPass name="AugmentaBallsOfFire" type="WireGenerator" uniqueTypeId="c_bef949a0-9c0c-49e5-95e5-0becdb8b0a27" uniqueId="1679994687866" baseType="Generator"/>
-					</VideoSource>
-				</PrimarySource>
-			</VideoTrack>
-		</Clip>
+		<Clip name="Clip" uniqueId="1621342720101" layerIndex="2" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1679994683654" layerIndex="0" columnIndex="5">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Checkered" value="Checkered"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1141,7 +1113,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535794" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077671928" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994687076" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1155,7 +1127,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535868" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672018" baseType="RenderPassChain"/>
 						<RenderPass name="Checkered" type="Checkered" uniqueTypeId="736772465707583394" uniqueId="1679994687038" baseType="Generator">
 							<Params name="Params">
 								<ParamColor name="Color 1" T="COLOR" default="4278190080" value="4278190080" channelmode="2" paletteEnabled="0" color="4278190080" interpolated="0"/>
@@ -1169,6 +1141,9 @@
 		<Clip name="Clip" uniqueId="1679994685446" layerIndex="1" columnIndex="5">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Augmenta dots" value="Augmenta dots"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1203,7 +1178,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347535969" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672137" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1680084918563" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1211,7 +1186,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536043" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672212" baseType="RenderPassChain"/>
 						<RenderPass name="Augmentadots" type="WireGenerator" uniqueTypeId="c_32dc806a-a13a-4552-b0a8-75bc4f09fe10" uniqueId="1680084918525" baseType="Generator">
 							<Params name="Params">
 								<ParamColor name="Color" T="COLOR" default="4294934720" value="4294934720" channelmode="2" paletteEnabled="0" color="4294934720" interpolated="0"/>
@@ -1222,10 +1197,12 @@
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1679994686120" layerIndex="2" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1680098695699" layerIndex="0" columnIndex="6">
+		<Clip name="Clip" uniqueId="1679994687857" layerIndex="2" columnIndex="5">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Gradient" value="Gradient"/>
+				<Param name="Name" T="STRING" default="Augmenta Balls Of Fire 2" value="Augmenta Balls Of Fire 2"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1260,7 +1237,61 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536144" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672313" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1679994687861" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672388" baseType="RenderPassChain"/>
+						<RenderPass name="AugmentaBallsOfFire" type="WireGenerator" uniqueTypeId="c_bef949a0-9c0c-49e5-95e5-0becdb8b0a27" uniqueId="1679994687866" baseType="Generator"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1680098695699" layerIndex="0" columnIndex="6">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Gradient" value="Gradient"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="2538.6393978020314535">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.50772787956040632551" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1280" value="1280">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0390625"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="720" value="720">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02197265625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672451" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1680098695703" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1274,7 +1305,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536218" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672544" baseType="RenderPassChain"/>
 						<RenderPass name="Gradient" type="Gradient" uniqueTypeId="A401" uniqueId="1680098695715" baseType="Generator">
 							<Params name="Params">
 								<ParamColor name="Color 1" T="COLOR" default="4278190335" value="4278190335" channelmode="2" paletteEnabled="0" color="4278190335" interpolated="0"/>
@@ -1287,18 +1318,21 @@
 			</VideoTrack>
 		</Clip>
 		<Clip name="Clip" uniqueId="1679994686274" layerIndex="1" columnIndex="6"/>
-		<Clip name="Clip" uniqueId="1678969600498" layerIndex="2" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1679994686120" layerIndex="2" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1678969600082" layerIndex="0" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1679994685638" layerIndex="1" columnIndex="7">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Video Router" value="Augmenta Swirl 2"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="2090.379197824979201">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.41807583956499583255" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
@@ -1311,7 +1345,10 @@
 				</Params>
 			</Transport>
 			<ClipView name="ClipView">
-				<FoldParams name="FoldParams"/>
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/" folded="0"/>
+				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
@@ -1326,7 +1363,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536347" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672691" baseType="RenderPassChain">
 					<RenderPass storage="0" name="AugmentaSwirl" type="DryWetEffect" uniqueTypeId="c_b882db49-e8da-4465-b7af-c845f7d83742" uniqueId="1679994685642" baseType="DryWetEffect" index="0">
 						<RenderPass name="AugmentaSwirl" type="WireEffect" uniqueTypeId="c_b882db49-e8da-4465-b7af-c845f7d83742" uniqueId="1679994685644" baseType="Effect" dwType="Effect"/>
 						<ChoosableMixer name="Mixer">
@@ -1340,7 +1377,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1280" height="720" type="CompositionRouterVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536431" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672781" baseType="RenderPassChain"/>
 						<Params name="Settings">
 							<ParamChoice name="Input" default="0:0" value="3:1" storeChoices="0"/>
 						</Params>
@@ -1348,16 +1385,22 @@
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1679994688015" layerIndex="2" columnIndex="7">
+		<Clip name="Clip" uniqueId="1678969600498" layerIndex="2" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1679994684312" layerIndex="0" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1678969600342" layerIndex="1" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1679994688015" layerIndex="2" columnIndex="8">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Video Router" value="Augmenta duplicator 2"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="500.43809779937299709">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.1000876195598745938" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
@@ -1385,7 +1428,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536481" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672831" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Augmentaduplicator" type="DryWetEffect" uniqueTypeId="c_28972f66-3566-4088-aadc-b07af5c58d5f" uniqueId="1679994688019" baseType="DryWetEffect" index="0">
 						<RenderPass name="Augmentaduplicator" type="WireEffect" uniqueTypeId="c_28972f66-3566-4088-aadc-b07af5c58d5f" uniqueId="1679994688021" baseType="Effect" dwType="Effect">
 							<Params name="Params">
@@ -1417,7 +1460,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1280" height="720" type="CompositionRouterVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347536572" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672924" baseType="RenderPassChain"/>
 						<Params name="Settings">
 							<ParamChoice name="Input" default="0:0" value="3:1" storeChoices="0"/>
 						</Params>
@@ -1425,11 +1468,14 @@
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1679994684312" layerIndex="0" columnIndex="8"/>
-		<Clip name="Clip" uniqueId="1678969600342" layerIndex="1" columnIndex="8"/>
-		<Clip name="Clip" uniqueId="1679994685953" layerIndex="2" columnIndex="8">
+		<Clip name="Clip" uniqueId="1679478894155" layerIndex="0" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1679478894156" layerIndex="1" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1679994685953" layerIndex="2" columnIndex="9">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Augmenta empty" value="Augmenta empty"/>
+				<ParamRange name="LoadProgress" T="DOUBLE" default="0" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1438,7 +1484,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
 								</ParamRange>
 							</Params>
@@ -1464,7 +1510,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347537983" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077672974" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1682347537991" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1472,21 +1518,21 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1280" height="720" type="GeneratorVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1682347537976" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1701077673049" baseType="RenderPassChain"/>
 						<RenderPass name="Augmentaempty" type="WireGenerator" uniqueTypeId="c_5b0a70ff-b9ad-4b92-99fd-b5ad031c5f09" uniqueId="1682347537973" baseType="Generator"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1679478894155" layerIndex="0" columnIndex="9"/>
-		<Clip name="Clip" uniqueId="1679478894156" layerIndex="1" columnIndex="9"/>
-		<Clip name="Clip" uniqueId="1678969600576" layerIndex="2" columnIndex="9"/>
 		<Clip name="Clip" uniqueId="1679659106524" layerIndex="0" columnIndex="10"/>
 		<Clip name="Clip" uniqueId="1679659106525" layerIndex="1" columnIndex="10"/>
-		<Clip name="Clip" uniqueId="1679478894157" layerIndex="2" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1678969600576" layerIndex="2" columnIndex="10"/>
 		<Clip name="Clip" uniqueId="1679994686699" layerIndex="0" columnIndex="11"/>
 		<Clip name="Clip" uniqueId="1679994686700" layerIndex="1" columnIndex="11"/>
-		<Clip name="Clip" uniqueId="1679659106526" layerIndex="2" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1679478894157" layerIndex="2" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1688659089596" layerIndex="0" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1688659089597" layerIndex="1" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1679659106526" layerIndex="2" columnIndex="12"/>
 	</Deck>
 	<Deck name="Deck" uniqueId="1499337861242" numLayersWithContent="3" numColumnsWithContent="6" numLayers="3" numColumns="9" closed="0" deckIndex="1">
 		<Column name="AV 00#" uniqueId="1678969598170" columnIndex="0">
@@ -4349,5 +4395,8 @@
 			<Param name="Name" T="STRING" default="empty" value="Wire"/>
 		</Params>
 	</Deck>
+	<Notes name="Notes">
+		<Note text_size_multiplier="2" text_color_index="3" text=""/>
+	</Notes>
 </Composition>
 
