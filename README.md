@@ -4,4 +4,4 @@ A collection of [Resolume](https://resolume.com/) Augmenta plugins made with Wir
 
 # Getting started
 
-Video tutorial and doc here ![point\_right](https://github.githubassets.com/images/icons/emoji/unicode/1f449.png) [Getting started with Resolume](https://en.resolume.docs.augmenta.tech/)
+Video tutorial and doc here [Getting started with Resolume]([https://en.resolume.docs.augmenta.tech/](https://docs.augmenta.tech/create-content-with-our-integrations/resolume))
