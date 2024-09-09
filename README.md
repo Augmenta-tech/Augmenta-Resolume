@@ -4,4 +4,4 @@ A collection of [Resolume](https://resolume.com/) Augmenta plugins made with Wir
 
 # Getting started
 
-Video tutorial and doc here [Getting started with Resolume]([https://en.resolume.docs.augmenta.tech/](https://docs.augmenta.tech/create-content-with-our-integrations/resolume))
+Video tutorial and doc here [Getting started with Resolume](https://docs.augmenta.tech/create-content-with-our-integrations/resolume)
